@@ -1,6 +1,5 @@
-from typing import NamedTuple, TypedDict
+from typing import NamedTuple
 
-import torch
 from torch import nn
 
 
@@ -19,7 +18,7 @@ class VGGConfig(NamedTuple):
 class VGGBlock(nn.Module):
     """VGG Block"""
 
-    def __init__(self, num_conv, in_channels, out_channels):
+    def __init__(self, num_conv: int, in_channels: int, out_channels: int):
         super().__init__()
         layers = []
         for _ in range(num_conv):
