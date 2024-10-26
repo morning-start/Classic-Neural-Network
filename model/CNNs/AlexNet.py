@@ -2,6 +2,7 @@ import torch
 from torch import nn
 
 
+# LINK https://zh.d2l.ai/chapter_convolutional-modern/alexnet.html
 class AlexNet(nn.Module):
     """
     2012年，AlexNet横空出世。它首次证明了学习到的特征可以超越手工设计的特征。它一举打破了计算机视觉研究的现状。
